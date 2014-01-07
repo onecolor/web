@@ -53,9 +53,9 @@ module.exports = function (grunt) {
         },
         connect: {
             options: {
-                port: 9000,
+                port: 9090,
                 // change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
+                hostname: 'onecolor.dev'
             },
             livereload: {
                 options: {
@@ -90,7 +90,7 @@ module.exports = function (grunt) {
         },
         open: {
             server: {
-                path: 'http://localhost:<%= connect.options.port %>'
+                path: 'http://onecolor.dev:<%= connect.options.port %>'
             }
         },
         clean: {
@@ -122,7 +122,7 @@ module.exports = function (grunt) {
             all: {
                 options: {
                     run: true,
-                    urls: ['http://localhost:<%= connect.options.port %>/index.html']
+                    urls: ['http://onecolor.dev:<%= connect.options.port %>/index.html']
                 }
             }
         },
