@@ -1,7 +1,7 @@
-Web.ApplicationRoute = Ember.Route.extend({
-    // admittedly, this should be in IndexRoute and not in the
-    // top level ApplicationRoute; we're in transition... :-)
-    model: function () {
-        return ['red', 'yellow', 'blue'];
+Web.ApplicationRoute = Em.Route.extend({
+  actions: {
+    viewColor: function(hex) {
+      this.transitionTo('colors.color', Web.Color.fromHex(hex));
     }
+  }
 });

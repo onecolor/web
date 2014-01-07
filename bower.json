@@ -2,13 +2,10 @@
   "name": "web",
   "version": "0.0.0",
   "dependencies": {
-    "ember": "1.2.0",
-    "ember-data-shim": "1.0.0-beta.2",
-    "bootstrap-sass": "~3.0.0"
-    
-  },
-  "resolutions": {
-    "ember": "1.0.0"
+    "ember": "1.3.0",
+    "ember-data-shim": "1.0.0-beta.4",
+    "bootstrap-sass": "~3.0.0",
+    "spectra": "https://github.com/aakpat6/spectra.git#d8a0bbbac74e9791d7d898b546937225f6d72583"
   },
   "devDependencies": {
     "ember-mocha-adapter": "0.1.2"
