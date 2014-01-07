@@ -17,5 +17,8 @@ Web.Color = Em.Object.extend({
 }).reopenClass({
   fromHex: function(hex) {
     return Web.Color.create({ hex: hex });
+  },
+  random: function() {
+    return Spectra.random().hex();
   }
 });
